@@ -56,11 +56,11 @@ $(window).load(function(){
 
 
 $('#countdown').countdown({
-	date: "May 30 2020 21:22",
+	date: "Feb 18 2021 21:54:53",
 	render: function(data) {
 	  var el = $(this.el);
 	  el.empty()
-	    //.append("<div>" + this.leadingZeros(data.years, 4) + "<span>years</span></div>")
+	    .append("<div>" + this.leadingZeros("T -") + "<span>⠀</span></div>")
 	    .append("<div>" + this.leadingZeros(data.days, 2) + " <span>days</span></div>")
 	    .append("<div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div>")
 	    .append("<div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div>")
